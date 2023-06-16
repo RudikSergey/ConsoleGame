@@ -40,10 +40,10 @@ public class GameTree {
                 gameTree.insertAnimal(question, animal);
 
                 System.out.println("Сыграем еще раз? (Да/Нет)");
-                String playAgainResponse = getInputWithValidation("Да", "Нет");
-                if (playAgainResponse.equalsIgnoreCase("да")) {
+                String checkCondition = getInputWithValidation("Да", "Нет");
+                if (checkCondition.equalsIgnoreCase("да")) {
                     currentNode = root;
-                } else if (playAgainResponse.equalsIgnoreCase("нет")) {
+                } else if (checkCondition.equalsIgnoreCase("нет")) {
                     break;
                 }
             }
