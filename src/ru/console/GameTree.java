@@ -65,7 +65,7 @@ public class GameTree {
         } else {
             System.out.println(currentNode.getData()+"? (Да/Нет)");
         }
-        String response = getInputWithValidation("да", "нет");
+        String response = getInputWithValidation("Да", "Нет");
         return response.equalsIgnoreCase("да");
     }
 
